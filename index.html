@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Next Escking</title>
+    <style>
+        /* Reset CSS */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            line-height: 1;
+            font-family: sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        
+
+        ol, ul {
+            list-style: none;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Game specific styles */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #13001a;
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .logo-container:hover {
+            box-shadow: 0 0 25px rgba(128, 0, 255, 0.5);
+        }
+
+        .logo {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .game-container {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #13001a;
+            box-shadow: 0 0 15px rgba(128, 0, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .game-container:hover {
+            box-shadow: 0 0 25px rgba(128, 0, 255, 0.5);
+        }
+
+        #game-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .github-link {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .github-link img {
+            width: 64px;
+            height: 64px;
+            filter: invert(1);
+        }
+
+        .github-link:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            color: #a880ff;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <img src="./assets/logo.png" alt="Lava Next Escking Logo" class="logo">
+        <br>
+        <h1> You might need to zoom out!</h1>
+        <br>
+        
+        
+        <div class="game-container">
+            <div id="game-container"></div>
+        </div>
+        
+        <a href="https://github.com/Satella-tan/LAVA-ESCKING" target="_blank" class="github-link" title="View source code on GitHub">
+            <img src="./assets/github_logo.png" alt="GitHub Repository">
+        </a>
+        
+        <footer>
+            <h2>
+            &copy; Music and sound effect and anything not mine.
+            </h2>
+        </footer>
+    </div>
+    
+    <script src="./phaser.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
